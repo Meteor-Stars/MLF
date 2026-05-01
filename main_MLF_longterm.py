@@ -650,40 +650,6 @@ def main():
     args.patch_pad = True
     args.shared_num = 3
 
-    ########historcial sequence length is 96
-    args.scal_all = [48, 96]
-    args.fixed_patch_num = 6
-    args.MAP_alpha = 2
-    ###equal patch
-    args.MAP = True  # Multi-period self-Adaptive patching
-    args.embed_dim = 3
-    args.redundancy_scaling = True
-    # args.scal_all = [12,24,48,96]
-
-    args.patchLen_stride_all = []
-    args.equal_patch_len = []
-    for i, period_s in enumerate(args.scal_all):
-        args.patchLen_stride_all.append(
-            [int(period_s / args.fixed_patch_num) * args.MAP_alpha, int(period_s / args.fixed_patch_num)])
-        args.equal_patch_len.append(int(period_s / args.fixed_patch_num) * args.MAP_alpha)
-    if not args.MAP:
-        # using fixed patch length
-        args.patchLen_stride_all = [args.patchLen_stride_all[-1] for _ in range(len(args.scal_all))]
-    else:
-        # using self-adaptive patch length and stride
-        pass
-    args.max_patch_len = args.patchLen_stride_all[-1][0]
-    args.patch_squeeze = False
-    args.squeeze_factor = [4 for _ in range(len(args.scal_all))]
-    args.context_window = None
-    args.threshold_patch_num = 7
-    args.D_norm = False
-    args.revin_norm = True
-    args.patch_pad = True
-    args.activation_tag = True
-    args.LWI = True
-
-
     args.seq_len = args.scal_all[-1]
     args.context_window = None
     args.threshold_patch_num = 7  # When the number of patches is  less than or equal to this value, no patch squeeze is performed

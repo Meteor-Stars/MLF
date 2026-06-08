@@ -3,7 +3,7 @@
 The paper is available at the link [Paper (PDF)](https://dl.acm.org/doi/pdf/10.1145/3690624.3709422).
 
 ### News
-- **[2026/06]** We release an **enriched version** of the Fund Sales Dataset with additional covariates (e.g., page exposure UVs and market yield rates) and detailed table schemas. The [original dataset](https://drive.google.com/drive/folders/1KKqHsdd18ZuBdpV8ZiiQxU9bbMkPR4kS) was split by holding period and merged into a unified format; the enriched version extends it with richer features to facilitate more comprehensive research. The enriched dataset is available at [Google Drive (Enriched Fund Dataset)](https://drive.google.com/drive/folders/1mx5ItVm2Nyod8n2AixotTSbbFIK5hO35). See [Introduction of Fund Sales Dataset](#introduction-of-fund-sales-dataset) for full table descriptions.
+- **[2026/06]** We release an **enriched version** of the Fund Sales Dataset with additional covariates (e.g., page exposure UVs and market yield rates) and detailed table schemas. The [original dataset](https://drive.google.com/drive/folders/1KKqHsdd18ZuBdpV8ZiiQxU9bbMkPR4kS) was split by holding period and merged into a unified format; the enriched version extends it with richer features to facilitate more comprehensive research. The enriched dataset in its original unmerged format is available at [Google Drive (Enriched Fund Dataset)](https://drive.google.com/drive/folders/1mx5ItVm2Nyod8n2AixotTSbbFIK5hO35). See [Introduction of Fund Sales Dataset](#introduction-of-fund-sales-dataset) for full table descriptions.
 
 #### Simple introduction
 
@@ -38,7 +38,7 @@ while maintaining good accuracy in the long-term TSF task.
 </p>
 
 ### Downloading Datasets
-Due to confidentiality reasons, we can only disclose partial data of fund products. You can download the public datasets and **original Fund dataset** from https://drive.google.com/drive/folders/1KKqHsdd18ZuBdpV8ZiiQxU9bbMkPR4kS. The **enriched version** (without data merging) can be downloaded from the link https://drive.google.com/drive/folders/1mx5ItVm2Nyod8n2AixotTSbbFIK5hO35. The downloaded folders e.g., "Fund_Dataset",  should be placed at the "dataset" folder. For the **original Fund dataset**, the average holding period of Fund 1, Fund 2, and Fund 3 gradually increases, and the overall time pattern distribution also changes, which can be used for a more comprehensive evaluation of the algorithm's effectiveness. 
+Due to confidentiality reasons, we can only disclose partial data of fund products. You can download the public datasets and **original Fund dataset** from https://drive.google.com/drive/folders/1KKqHsdd18ZuBdpV8ZiiQxU9bbMkPR4kS. The **enriched version** in its original unmerged format is available at can be downloaded from the link https://drive.google.com/drive/folders/1mx5ItVm2Nyod8n2AixotTSbbFIK5hO35. The downloaded folders e.g., "Fund_Dataset",  should be placed at the "dataset" folder. For the **original Fund dataset**, the average holding period of Fund 1, Fund 2, and Fund 3 gradually increases, and the overall time pattern distribution also changes, which can be used for a more comprehensive evaluation of the algorithm's effectiveness. 
 
 ### Introduction of Fund Sales Dataset
 We collect fund sales datasets of different customers from Ant Fortune, which is an online wealth management platform on the Alipay APP. A subset of fund datasets covering January 2021 to January 2023 is currently released due to confidentiality reasons. The datasets consist of three tables described below.

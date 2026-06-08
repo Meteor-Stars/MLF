@@ -45,8 +45,8 @@ We collect fund sales datasets of different customers from Ant Fortune, which is
 
 #### 1. Fund Purchase/Redemption Data and Fund Feature Information Table
 
-| # | Field | Description | Type |
-|---|-------|-------------|------|
+|  | Field | Description | Type |
+|--|-------|-------------|------|
 | 1 | product_pid | Product ID | string |
 | 2 | transaction_date | Transaction date | string |
 | 3 | apply_amt | Purchase (subscription) amount | double |
@@ -60,17 +60,20 @@ We collect fund sales datasets of different customers from Ant Fortune, which is
 | 11 | during_days | Fund holding period (days), i.e., the minimum number of calendar days between redemption and purchase | bigint |
 | 12 | total_net_value | Cumulative net asset value | double |
 
+
 #### 2. Market Information Table
 
-| # | Field | Description | Type |
-|---|-------|-------------|------|
+|  | Field | Description | Type |
+|--|-------|-------------|------|
 | 1 | enddate | Date | string |
 | 2 | yield | Yield rate (%) | double |
 
+
+
 #### 3. Calendar Information Table
 
-| # | Field | Description | Type |
-|---|-------|-------------|------|
+|  | Field | Description | Type |
+|--|-------|-------------|------|
 | 1 | stat_date | Date | string |
 | 2 | is_trade | Whether it is a trading day | bigint |
 | 3 | next_trade_date | Next trading day | string |
@@ -81,11 +84,11 @@ We collect fund sales datasets of different customers from Ant Fortune, which is
 | 8 | is_year_end | Whether it is the last trading day of the year | bigint |
 | 9 | trade_day_rank | Global trading day rank | bigint |
 
+
 Time series visualization of Fund dataset (first two lines) and public datasets is shown as follows:
 
-<p align="center">
 <img src="figure/Fund_Series_Vis.png" alt="替代文本" width="auto" height="300">
-</p>
+
 
 ## Reference
 ```

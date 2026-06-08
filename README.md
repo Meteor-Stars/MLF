@@ -89,8 +89,10 @@ Time series visualization of Fund dataset (first two lines) and public datasets 
 
 <img src="figure/Fund_Series_Vis.png" alt="替代文本" width="auto" height="300">
 
-
 ## Reference
+
+### If you find our dataset and methodology useful in your work, please cite our paper:
+
 ```
 @inproceedings{zhang2025multi,
   title={Multi-period learning for financial time series forecasting},
